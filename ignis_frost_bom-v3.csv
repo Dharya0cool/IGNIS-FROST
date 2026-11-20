@@ -1,0 +1,16 @@
+Category,Designator,Component Name,MPN / Part Number,Package / Footprint,Quantity,Supplier,Unit Price (USD),Total Price (USD),Purchase Link
+Components & PCB,U1,ESP32-C3-MINI-1 Wi-Fi & BLE Module,ESP32-C3-MINI-1-H4,SMD Module (Castellated),1,Robu.in,$2.64,$2.64,https://robu.in/product/espressif-esp32-c3-mini-1-h4-module/
+Components & PCB,U2,LSM6DS3 6-Axis IMU (Accel + Gyro),LSM6DS3TR-C,LGA-14 (2.5x3mm),1,Robu.in,$3.22,$3.22,https://robu.in/product/lsm6ds3tr-c-stmicroelectronics/
+Components & PCB,U3,"BMP280 Barometric Pressure and Temperature Sensor Module with Header Pins, I2C/SPI Interface for Arduino, Raspberry Pi, Weather Station and DIY Electronics Projects, Pack of 1",GY-BMP280,Breakout Module w/ Headers,1,Amazon India,$1.23,$1.23,https://www.amazon.in/JIVITH-BMP280-Barometric-Temperature-Electronics/dp/B0HBWR5153
+Components & PCB,J1,PH-02AWB-2mm-2 Pin Right Angle Horizontal Male Wafer Connector,PH-02AWB,2.0mm Pitch Right Angle Wafer,1,Robu.in,$0.03,$0.03,https://robu.in/product/ph-02awb-2mm-2-pin-right-angle-horizontal-male-wafer-connector/
+Components & PCB,C1-C4,100nF (0.1uF) 16V X7R Decoupling Capacitor,CC0603JRX7R7BB104,0603 SMD,4,Robu.in,$0.05,$0.18,https://robu.in/product/cc0603jrx7r7bb104-yageo-16v-100nf-x7r-%C2%B15-0603-multilayer-ceramic-capacitors-mlcc-smd-smt-rohs/
+Components & PCB,R1-R2,4.7k Ohm 1% 0.1W I2C Pull-Up Resistor,RC0603FR-074K7L,0603 SMD,2,Robu.in,$0.01,$0.01,https://robu.in/product/rc0603fr-074k7lyageosmd-chip-resistor-4-7-kohm-%25c2%25b1-1-100-mw-0603-1608-metric-thick-film-general-purpose/
+Components & PCB,PCB-1,Custom Ignis Frost PCB,Ignis Frost PCB,Custom PCB,1,JLCPCB,$4.00,$4.00,https://jlcpcb.com/
+Soldering & Bench Tools,TOOL-1,Professional Soldering Iron Kit,N/A,Soldering Tool,1,Amazon,$15.10,$15.10,https://www.amazon.in/gp/product/B0G3114QTN/ref=ox_sc_act_image_4?smid=A1DC3Q88YWBEDW&th=1
+Soldering & Bench Tools,TOOL-2,Black Silicone Soldering Mat,N/A,Soldering Mat,1,Amazon,$64.52,$64.52,https://www.amazon.in/gp/product/B08RXNFDDM/ref=ox_sc_act_image_3?smid=A2BWJVKSWP7TR2&psc=1
+Soldering & Bench Tools,TOOL-3,Digital Multimeter,N/A,Bench Meter,1,Amazon,$2.90,$2.90,https://www.amazon.in/gp/product/B07KK5LZBK/ref=ox_sc_act_image_2?smid=AJ6SIZC8YQDZX&psc=1
+Soldering & Bench Tools,TOOL-4,Soldering Iron Tip Cleaner,N/A,Tip Cleaner,1,Amazon,$2.77,$2.77,https://www.amazon.in/gp/product/B0H8JPTG5B/ref=ox_sc_act_image_1?smid=ALG0PUSQBLBR1&psc=1
+Summary,SUBTOTAL-COMP-EXCL,Total Estimated Component Cost (Excl. Shipping/GST),,,,,,$11.33,
+Summary,SUBTOTAL-COMP-INCL,Total Estimated Component Cost (incl. Shipping/GST),,,,,,$11.63,
+Summary,SUBTOTAL-SOLDERING,Total Estimated Soldering & Bench Tools Cost,,,,Amazon,,$85.30,
+Summary,GRAND-TOTAL,Grand Cost ($85.30 soldering + $11.63 components),,,,,,$96.93,
