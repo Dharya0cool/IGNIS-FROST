@@ -1,0 +1,8 @@
+Designator -- Component Name -- MPN / Part Number  Package / Footprint -- Quantity,Supplier -- Unit Price (INR) -- Total Price (INR) -- Purchase Link
+U1 -- ESP32-C3-MINI-1 Wi-Fi & BLE Module -- ESP32-C3-MINI-1-H4 -- SMD Module (Castellated) -- 1 -- Robu.in -- $2.64 -- $2.64 -- https://robu.in/product/espressif-esp32-c3-mini-1-h4-module/
+U2 -- LSM6DS3 6-Axis IMU (Accel + Gyro) -- LSM6DS3TR-C -- LGA-14 (2.5x3mm) -- 1 -- Robu.in -- $3.22 -- $3.22 -- https://robu.in/product/lsm6ds3tr-c-stmicroelectronics/
+U3 -- BMP280 Barometric Pressure and Temperature Sensor Module with Header Pins, I2C/SPI Interface for Arduino, Raspberry Pi, Weather Station and DIY Electronics Projects, Pack of 1 -- GY-BMP280 -- Breakout Module w/ Headers -- 1 -- Amazon India -- $1.23 -- $1.23 -- https://www.amazon.in/JIVITH-BMP280-Barometric-Temperature-Electronics/dp/B0HBWR5153
+J1 -- 2-Pin JST PH-2A Right Angle Male Connector -- KLS1-XL1-2.00-02-R -- 2.0mm Pitch THT Right Angle -- 1 -- Sharvi Electronics -- $0.02 -- $0.02 -- https://sharvielectronics.com/product/2-pin-jst-ph-2a-right-angle-male-connector-2mm-pitch/
+C1-C4 -- 100nF (0.1uF) 16V X7R Decoupling Capacitor -- CC0603JRX7R7BB104 -- 0603 SMD -- 4 -- Robu.in -- ~$0.05 -- $0.18 -- https://robu.in/product/cc0603jrx7r7bb104-yageo-16v-100nf-x7r-%C2%B15-0603-multilayer-ceramic-capacitors-mlcc-smd-smt-rohs/
+R1-R2 -- 4.7k Ohm 1% 0.1W I2C Pull-Up Resistor -- RC0603FR-074K7L -- 0603 SMD -- 2 -- Robu.in --$0.01 -- $0.01 -- https://robu.in/product/rc0603fr-074k7lyageosmd-chip-resistor-4-7-kohm-%25c2%25b1-1-100-mw-0603-1608-metric-thick-film-general-purpose/
+Total Estimated Component Cost (Excl. Shipping/GST) ---- $7.30
