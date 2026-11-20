@@ -12,9 +12,11 @@ C1-C4 -- 100nF (0.1uF) 16V X7R Decoupling Capacitor -- CC0603JRX7R7BB104 -- 0603
 
 R1-R2 -- 4.7k Ohm 1% 0.1W I2C Pull-Up Resistor -- RC0603FR-074K7L -- 0603 SMD -- 2 -- Robu.in --$0.01 -- $0.01 -- https://robu.in/product/rc0603fr-074k7lyageosmd-chip-resistor-4-7-kohm-%25c2%25b1-1-100-mw-0603-1608-metric-thick-film-general-purpose/
 
-Total Estimated Component Cost (Excl. Shipping/GST) ---- $7.33
+PCB:- $4.00 --- JLCPCB 
 
-Total Estimated Component Cost (incl. Shipping/GST) ---- $7.63
+Total Estimated Component Cost (Excl. Shipping/GST) ---- $11.33
+
+Total Estimated Component Cost (incl. Shipping/GST) ---- $11.63
 
 
 Other thing for soldering:-
@@ -30,6 +32,6 @@ Digital Multimeter -- 1 -- Amazon -- $2.90 -- $2.90 -- https://www.amazon.in/gp/
 Soldering Iron Tip Cleaner -- 1 -- Amazon -- $2.77 -- $2.77 -- https://www.amazon.in/gp/product/B0H8JPTG5B/ref=ox_sc_act_image_1?smid=ALG0PUSQBLBR1&psc=1
 
 
-Grand cost:- $85.30(of soldering) + $$7.63(of components) = $92.93
+Grand cost:- $85.30(of soldering) + $11.63(of components) = $96.93
 
                                                             #------------END------------#
