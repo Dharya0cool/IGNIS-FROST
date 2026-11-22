@@ -1,1 +1,109 @@
+#include <Wire.h>
+#include <Adafruit_BMP280.h>
+#include <Adafruit_LSM6DS3.h>
 
+// --- Pin Definitions (Update to match your IGNIS-FROST schematic) ---
+constexpr int I2C_SDA_PIN = 8;
+constexpr int I2C_SCL_PIN = 9;
+
+// Keep pyrotechnic / deployment outputs LOW at boot until flight logic enables them
+constexpr int DROGUE_PYRO_PIN = 4;
+constexpr int MAIN_PYRO_PIN   = 5;
+constexpr int STATUS_LED_PIN  = 2;
+
+// --- Sensor Objects ---
+Adafruit_BMP280 bmp;
+Adafruit_LSM6DS3 lsm6ds3;
+
+enum FlightState {
+  PAD_IDLE,
+  ASCENT,
+  APOGEE_DROGUE,
+  DESCENT_MAIN,
+  LANDED
+};
+
+FlightState currentState = PAD_IDLE;
+float groundAltitude_m = 0.0f;
+float maxAltitude_m    = 0.0f;
+float seaLevelPressure_hPa = 1013.25f;
+
+void setup() {
+  // Always safe deployment pins first
+  pinMode(DROGUE_PYRO_PIN, OUTPUT);
+  pinMode(MAIN_PYRO_PIN, OUTPUT);
+  pinMode(STATUS_LED_PIN, OUTPUT);
+  digitalWrite(DROGUE_PYRO_PIN, LOW);
+  digitalWrite(MAIN_PYRO_PIN, LOW);
+  digitalWrite(STATUS_LED_PIN, LOW);
+
+  Serial.begin(115200);
+  delay(500);
+  Serial.println("Ignis Frost Flight Computer booting...");
+
+  Wire.begin(I2C_SDA_PIN, I2C_SCL_PIN);
+
+  if (!bmp.begin(0x76) && !bmp.begin(0x77)) {
+    Serial.println("Warning: BMP280 not detected on I2C (0x76/0x77).");
+  } else {
+    Serial.println("BMP280 initialized.");
+  }
+
+  if (!lsm6ds3.begin_I2C()) {
+    Serial.println("Warning: LSM6DS3 not detected on I2C.");
+  } else {
+    Serial.println("LSM6DS3 initialized.");
+  }
+
+  groundAltitude_m = bmp.readAltitude(seaLevelPressure_hPa);
+  maxAltitude_m = groundAltitude_m;
+  digitalWrite(STATUS_LED_PIN, HIGH);
+}
+
+void loop() {
+  float altitude_m = bmp.readAltitude(seaLevelPressure_hPa) - groundAltitude_m;
+  if (altitude_m > maxAltitude_m) {
+    maxAltitude_m = altitude_m;
+  }
+
+  sensors_event_t accel, gyro, temp;
+  lsm6ds3.getEvent(&accel, &gyro, &temp);
+
+  // Placeholder flight state progression (refine thresholds with ground/sim testing)
+  switch (currentState) {
+    case PAD_IDLE:
+      if (accel.acceleration.z > 20.0f && altitude_m > 5.0f) {
+        currentState = ASCENT;
+        Serial.println("State -> ASCENT");
+      }
+      break;
+
+    case ASCENT:
+      // Detect apogee when altitude drops noticeably below peak
+      if ((maxAltitude_m - altitude_m) > 2.0f && maxAltitude_m > 15.0f) {
+        currentState = APOGEE_DROGUE;
+        Serial.println("State -> APOGEE_DROGUE (drogue logic placeholder)");
+      }
+      break;
+
+    case APOGEE_DROGUE:
+      currentState = DESCENT_MAIN;
+      break;
+
+    case DESCENT_MAIN:
+      if (altitude_m < 2.0f) {
+        currentState = LANDED;
+        Serial.println("State -> LANDED");
+      }
+      break;
+
+    case LANDED:
+      break;
+  }
+
+  // Telemetry debug output (replace or supplement with flash/SD/LoRa logging)
+  Serial.printf("State:%d | Alt:%.2fm | MaxAlt:%.2fm | AccZ:%.2fm/s2\n",
+                currentState, altitude_m, maxAltitude_m, accel.acceleration.z);
+
+  delay(100); // ~10 Hz sample loop for initial bring-up
+}
