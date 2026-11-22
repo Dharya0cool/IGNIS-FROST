@@ -1,0 +1,13 @@
+Part,Type,Quantity,Unit price (USD),Line total (USD),Link,Vendor,Funding,Notes,Designator,MPN / Part Number,Package / Footprint
+ESP32-C3-MINI-1 Wi-Fi & BLE Module,Part,1,2.64,2.64,https://robu.in/product/espressif-esp32-c3-mini-1-h4-module/,Robu.in,Grant,,U1,ESP32-C3-MINI-1-H4,SMD Module (Castellated)
+LSM6DS3 6-Axis IMU (Accel + Gyro),Part,1,3.22,3.22,https://robu.in/product/lsm6ds3tr-c-stmicroelectronics/,Robu.in,Grant,,U2,LSM6DS3TR-C,LGA-14 (2.5x3mm)
+BMP280 Barometric Pressure and Temperature Sensor Module,Part,1,1.23,1.23,https://www.amazon.in/JIVITH-BMP280-Barometric-Temperature-Electronics/dp/B0HBWR5153,Amazon India,Grant,,U3,GY-BMP280,Breakout Module w/ Headers
+PH-02AWB-2mm-2 Pin Right Angle Horizontal Male Wafer Connector,Part,1,0.03,0.03,https://robu.in/product/ph-02awb-2mm-2-pin-right-angle-horizontal-male-wafer-connector/,Robu.in,Grant,,J1,PH-02AWB,2.0mm Pitch Right Angle Wafer
+100nF (0.1uF) 16V X7R Decoupling Capacitor,Part,4,0.04,0.18,https://robu.in/product/cc0603jrx7r7bb104-yageo-16v-100nf-x7r-%C2%B15-0603-multilayer-ceramic-capacitors-mlcc-smd-smt-rohs/,Robu.in,Grant,,C1-C4,CC0603JRX7R7BB104,0603 SMD
+4.7k Ohm 1% 0.1W I2C Pull-Up Resistor,Part,2,0.01,0.01,https://robu.in/product/rc0603fr-074k7lyageosmd-chip-resistor-4-7-kohm-%25c2%25b1-1-100-mw-0603-1608-metric-thick-film-general-purpose/,Robu.in,Grant,,R1-R2,RC0603FR-074K7L,0603 SMD
+Custom Ignis Frost PCB,PCB,1,4.00,4.00,https://jlcpcb.com/,JLCPCB,Grant,,PCB-1,Ignis Frost PCB,Custom PCB
+Professional Soldering Iron Kit,Part,1,15.10,15.10,https://www.amazon.in/gp/product/B0G3114QTN/ref=ox_sc_act_image_4?smid=A1DC3Q88YWBEDW&th=1,Amazon,Grant,,TOOL-1,N/A,Soldering Tool
+Black Silicone Soldering Mat,Part,1,64.52,64.52,https://www.amazon.in/gp/product/B08RXNFDDM/ref=ox_sc_act_image_3?smid=A2BWJVKSWP7TR2&psc=1,Amazon,Grant,,TOOL-2,N/A,Soldering Mat
+Digital Multimeter,Part,1,2.90,2.90,https://www.amazon.in/gp/product/B07KK5LZBK/ref=ox_sc_act_image_2?smid=AJ6SIZC8YQDZX&psc=1,Amazon,Grant,,TOOL-3,N/A,Bench Meter
+Soldering Iron Tip Cleaner,Part,1,2.77,2.77,https://www.amazon.in/gp/product/B0H8JPTG5B/ref=ox_sc_act_image_1?smid=ALG0PUSQBLBR1&psc=1,Amazon,Grant,,TOOL-4,N/A,Tip Cleaner
+Total,,,,96.60,,,,,,,
