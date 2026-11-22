@@ -28,7 +28,7 @@ I ran a Design Rule Check to catch any clearance, spacing, or silkscreen slip-up
 
 
 November 20, 2026 — Grant BOM, Power & Soldering Setup [1 hour]
-Today I pulled the grant BOM together so I can actually source the parts and put the board together on my bench here in India (230V / 50Hz mains where needed). I locked in the 10-component core PCB BOM at ₹678.11 (~$7.31 USD), then picked an Orange 3.7V 1800mAh 25C 1S LiPo (₹949.00 / ~$10.23 USD) and a 4-port DC 5V 1S RC balance charger (₹229.00 / ~$2.47 USD) on Robu.in, bringing the hardware and power subtotal to ₹1,856.11 (~$20.00 USD) against a ₹5,978 (~$64.42 USD) benchmark.
+Today I pulled the grant BOM together so I can actually source the parts and put the board together on my bench here in India (230V / 50Hz mains where needed). I locked in the 10-component core PCB BOM at ₹678.11 (~$7.31 USD).
 I also checked soldering and test gear—a 60W temperature-controlled soldering kit with LED helping hands (₹1,399), a Koptal brass tip cleaner (₹257), and an APTECH DEALS 2000-count digital multimeter (₹269)—while skipping the pricey ₹5,978 silicone mat so I have room left for PCB fabrication and rework flux/wick.
 
 <img width="1233" height="667" alt="Capture" src="https://github.com/user-attachments/assets/81b2fcac-747c-40b5-ad11-564c437f0ca9" />
